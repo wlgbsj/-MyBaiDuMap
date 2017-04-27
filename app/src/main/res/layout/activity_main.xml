@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wlgbsj.mybaidumap.MainActivity">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <Button
+        android:id="@+id/bt_putong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="普通地图"
+        android:textSize="12sp"
+        />
+    <Button
+        android:id="@+id/bt_weixing"
+        android:layout_below="@+id/bt_putong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卫星地图"
+        android:textSize="12sp"/>
+    <Button
+        android:id="@+id/bt_kongbai"
+        android:layout_below="@+id/bt_weixing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="空白"
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/bt_jiaotong"
+        android:layout_below="@+id/bt_kongbai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启交通图"
+        android:textSize="12sp"/>
+
+
+    <Button
+        android:id="@+id/bt_relitu"
+        android:layout_below="@+id/bt_jiaotong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启城市热力图"
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/bt_addview"
+        android:layout_below="@+id/bt_relitu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="指定位置添加坐标"
+        android:textSize="12sp"/>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_below="@+id/bt_addview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="动画开启"/>
+
+    <Button
+        android:id="@+id/bt_jiheview"
+        android:layout_below="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加几何覆盖物"
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/bt_jwejnzi"
+        android:layout_below="@+id/bt_jiheview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加文字覆盖物"
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/bt_getmy"
+        android:layout_above="@+id/bt_zhoubianleida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取自己的经纬度信息"
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/bt_zhoubianleida"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="周边雷达"
+        android:textSize="12sp"/>
+
+</RelativeLayout>
